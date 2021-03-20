@@ -1,4 +1,5 @@
 ﻿using Business.Abstract;
+using Business.Contants;
 using Core.Utilities.Results;
 using DataAccess.Abstract;
 using Entities.Concrete;
@@ -26,7 +27,7 @@ namespace Business.Concrete
 
         public IDataResult<List<Rental>> GetAll()
         {
-            return new SuccessDataResult<List<Rental>>(_rentDal.GetAll());
+            return new SuccessDataResult<List<Rental>>(_rentDal.GetAll(),Messages.RentalListed);
         }
 
         public IDataResult<List<Rental>> GetAllByCarId(int carId)
