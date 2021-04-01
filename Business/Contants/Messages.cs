@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.Serialization;
 using System.Text;
 
 namespace Business.Contants
@@ -29,5 +30,11 @@ namespace Business.Contants
         internal static string CustomerListed = "Müşteriler Listelendi";
         internal static string UserListed= "Kullanıcılar Listelendi";
         internal static string RentalListed = "Kiralanan Araç Bilgisi Listelendi";
+        internal static string CarImageLimitExceeded="Araç Resim Limitic doldu";
+        public static string ImageAdded="Resim Eklendş";
+        internal static string ImageDeleted="Resim Silindi";
+        internal static string CarImagesListed="Resimler Listelendi";
+        internal static string CarCheckImageLimited="";
+        public static string AuthorizationDenied="Yetkiniz Yok";
     }
 }
